@@ -1,0 +1,57 @@
+LTspice 24.1.10 for Windows
+Circuit: D:\HS Bremen\WiSe 3 (2025-2026)\SEELEK\Labour\Labor 2\simulation 1\C4 HSS 1.net
+Start Time: Wed Mar  4 10:46:11 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+D:\HS Bremen\WiSe 3 (2025-2026)\SEELEK\Labour\Labor 2\simulation 1\C4 HSS 1.net(8): Limiting rise time to 8e-06.
+
+V2 N004 N005 PULSE(0 10 0 0 0 {d*1/fs}{1/fs})
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\HS Bremen\WiSe 3 (2025-2026)\SEELEK\Labour\Labor 2\simulation 1\C4 HSS 1.net(8): Limiting fall time to 8e-06.
+
+V2 N004 N005 PULSE(0 10 0 0 0 {d*1/fs}{1/fs})
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+WARNING: Node n005 is floating.
+
+Per .tran options, skipping operating point for transient analysis.
+.step d=0.2
+.step d=0.4
+.step d=0.6
+.step d=0.8
+Total elapsed time: 2.579 seconds.
+
+Files loaded:
+D:\HS Bremen\WiSe 3 (2025-2026)\SEELEK\Labour\Labor 2\simulation 1\C4 HSS 1.net
+C:\Users\Simon\AppData\Local\LTspice\lib\cmp\standard.dio
+
+
+Measurement: delta_i
+  step	PP(I(Rv))	FROM	TO
+     1	0.80534661017	0	0.04
+     2	1.37615687341	0	0.04
+     3	1.81803749627	0	0.04
+     4	1.55024671555	0	0.04
+
+Measurement: ie_eff
+  step	RMS(I(Rv))	FROM	TO
+     1	0.356353469929	0	0.04
+     2	0.726708955901	0	0.04
+     3	1.05572073432	0	0.04
+     4	1.81781272077	0	0.04
+
+Measurement: delta_u
+  step	PP(V(Ua))	FROM	TO
+     1	0.863597869873	0	0.04
+     2	2.59478187561	0	0.04
+     3	4.21078872681	0	0.04
+     4	10.5201816559	0	0.04
+
+Measurement: ua_eff
+  step	RMS(V(Ua))	FROM	TO
+     1	13.2385050753	0	0.04
+     2	18.1120230414	0	0.04
+     3	21.1384423804	0	0.04
+     4	21.3406499904	0	0.04
